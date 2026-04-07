@@ -1,0 +1,29 @@
+{
+  "autoUpdatesChannel": "stable",
+  "env": {
+    "CLAUDE_CODE_NEW_INIT": "true"
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/lint_changed_files.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/verify_before_stop.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

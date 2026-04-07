@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep \"\\\\.swift$\")",
+      "Bash(find /Users/ezyeun/Desktop/Workspace/01_Practice/PodCastScript -name *.xcworkspace -o -name Podfile -o -name Package.swift)",
+      "Bash(grep -E \"\\(View|ViewModel\\)$\")"
+    ]
+  }
+}

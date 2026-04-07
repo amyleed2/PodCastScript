@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1E7A0F912F7E47B10076A20F /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1E7A0F902F7E47B10076A20F /* Moya */; };
+		1E7A0F942F7E47BD0076A20F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1E7A0F932F7E47BD0076A20F /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1E9881032F7BC62300F43D0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +34,22 @@
 		1E98810C2F7BC62300F43D0E /* PodCastScriptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodCastScriptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1E98814E2F7C372700F43D0E /* Exceptions for "PodCastScript" folder in "PodCastScript" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1E9880F42F7BC62100F43D0E /* PodCastScript */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1E9880F72F7BC62100F43D0E /* PodCastScript */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1E98814E2F7C372700F43D0E /* Exceptions for "PodCastScript" folder in "PodCastScript" target */,
+			);
 			path = PodCastScript;
 			sourceTree = "<group>";
 		};
@@ -52,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7A0F912F7E47B10076A20F /* Moya in Frameworks */,
+				1E7A0F942F7E47BD0076A20F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +132,8 @@
 			);
 			name = PodCastScript;
 			packageProductDependencies = (
+				1E7A0F902F7E47B10076A20F /* Moya */,
+				1E7A0F932F7E47BD0076A20F /* Alamofire */,
 			);
 			productName = PodCastScript;
 			productReference = 1E9880F52F7BC62100F43D0E /* PodCastScript.app */;
@@ -195,6 +217,10 @@
 			);
 			mainGroup = 1E9880EC2F7BC62100F43D0E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1E7A0F8F2F7E47B10076A20F /* XCRemoteSwiftPackageReference "Moya" */,
+				1E7A0F922F7E47BD0076A20F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1E9880F62F7BC62100F43D0E /* Products */;
 			projectDirPath = "";
@@ -271,6 +297,8 @@
 /* Begin XCBuildConfiguration section */
 		1E9881142F7BC62300F43D0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 1E9880F72F7BC62100F43D0E /* PodCastScript */;
+			baseConfigurationReferenceRelativePath = Data/Config/Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -335,6 +363,8 @@
 		};
 		1E9881152F7BC62300F43D0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 1E9880F72F7BC62100F43D0E /* PodCastScript */;
+			baseConfigurationReferenceRelativePath = Data/Config/Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -400,6 +430,7 @@
 				DEVELOPMENT_TEAM = 7CJ6R87Q3T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PodCastScript/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -435,6 +466,7 @@
 				DEVELOPMENT_TEAM = 7CJ6R87Q3T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PodCastScript/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -584,6 +616,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E7A0F8F2F7E47B10076A20F /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		1E7A0F922F7E47BD0076A20F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E7A0F902F7E47B10076A20F /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E7A0F8F2F7E47B10076A20F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		1E7A0F932F7E47BD0076A20F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E7A0F922F7E47BD0076A20F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E9880ED2F7BC62100F43D0E /* Project object */;
 }
